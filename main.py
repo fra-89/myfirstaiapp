@@ -14,7 +14,7 @@ tweet_template = "Give me {number} tweets on {topic}"
 tweet_prompt = PromptTemplate(template = tweet_template, input_variables = ['number', 'topic'])
 
 # Initialize Google's Gemini model
-gemini_model = ChatGoogleGenerativeAI(model = "gemini-1.5-flash-latest")
+gemini_model = ChatGoogleGenerativeAI(model = "gemini-2.0-flash-exp")
 
 
 # Create LLM chain using the prompt template and model
